@@ -12,7 +12,31 @@ a { text-decoration:none }
 </script>
 <script type="text/javascript">
 
-
+var mygallery=new fadeSlideShow({
+	wrapperid: "fadeshow1", //ID of blank DIV on page to house Slideshow
+	dimensions: [800, 386], //width/height of gallery in pixels. Should reflect dimensions of largest image
+	imagearray: [
+		["/HesselbeinPlayaDelCarmen2023/media/image_1.jpg", "", "", ""],
+		["/HesselbeinPlayaDelCarmen2023/media/image_2.jpg", "", "", ""],
+		["/HesselbeinPlayaDelCarmen2023/media/image_3.jpg", "", "", ""],
+		["/HesselbeinPlayaDelCarmen2023/media/image_4.jpg", "", "", ""],
+		["/HesselbeinPlayaDelCarmen2023/media/image_5.jpg", "", "", ""] //<--no trailing comma after very last image element!
+	],
+	displaymode: {type:'auto', pause:3000, cycles:0, wraparound:false},
+	persist: false, //remember last viewed slide and recall within same session?
+	fadeduration: 1000, //transition duration (milliseconds)
+	descreveal: "ondemand",
+	togglerid: ""
+})
+</script>
+</HEAD>
+<BODY background="" leftMargin=0 topMargin=0 bgColor=#1c75bc>
+<CENTER><TABLE BORDER="0" WIDTH="1000" CELLPADDING="0" CELLSPACING="0">
+<TR>
+	<TD HEIGHT=120>
+	<img src="/HesselbeinPlayaDelCarmen2023/images/hesselbein_header.jpg" width="1000" height="140" alt="" title="" border="0" />
+	
+	
 </TD>
 </TR>
 
